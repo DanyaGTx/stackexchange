@@ -47,7 +47,6 @@
         Clear
       </button>
       <button
-        :class="{ isFiltersLoading: 'opacity-5' }"
         class="py-3 px-4 rounded-[14px] font-bold bg-accentSun w-[125px] hover:bg-[#fcbb0a] hover:shadow-box-shadow-element transition ease-in"
         @click="acceptFilters"
       >

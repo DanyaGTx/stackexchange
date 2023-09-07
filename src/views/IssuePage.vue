@@ -67,22 +67,22 @@ import { onMounted, ref } from 'vue'
 import { toastOptions } from '../constants'
 import { useRoute, useRouter } from 'vue-router'
 import { useToast } from 'vue-toastification'
+
 import IssueAnswer from '../components/IssueAnswer.vue'
 import IssueItem from '../components/IssueItem.vue'
-const toast = useToast()
+
 const route = useRoute()
-
 const router = useRouter()
-const isLoading = ref(false)
 
+const isLoading = ref(false)
 const answers = ref([])
 const issueDetails = ref([])
 const pageSize = ref(3)
-
 const errorMessage = ref('')
 
+const toast = useToast()
+
 const getIssueAnswer = async (id, size) => {
-  console.log(size)
   try {
     isLoading.value = true
     const { data } = await api.answers.getIssueAnswer(id, String(size))

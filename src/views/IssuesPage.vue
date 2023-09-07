@@ -84,21 +84,23 @@ import { onClickOutside } from '@vueuse/core'
 import { toastOptions } from '../constants'
 import { useRoute, useRouter } from 'vue-router'
 import { useToast } from 'vue-toastification'
+
 import FiltersComponent from '../components/FiltersComponent.vue'
 import IssueItem from '../components/IssueItem.vue'
 import SortTypeComponent from '../components/SortTypeComponent.vue'
 import convertDateToUnix from '../utils/convertDateToUnix'
 import debounce from 'lodash.debounce'
+
 const router = useRouter()
 const route = useRoute()
 
-const toast = useToast()
 const issues = ref([])
 const isLoading = ref(false)
-
 const errorMessage = ref('')
 const showMoreFilters = ref(false)
 const filtersRef = ref(null)
+
+const toast = useToast()
 
 const filters = ref({
   tagged: route.query.tagged,

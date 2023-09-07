@@ -30,26 +30,9 @@
 <script setup>
 import { computed, ref } from 'vue'
 import { onClickOutside } from '@vueuse/core'
+import { sortOptions } from '../constants/index.js'
 const isSelectAcitve = ref(false)
 const sortBySelect = ref(null)
-const setSortType = (sortType) => {
-  emit('update-sort-type', sortType)
-  isSelectAcitve.value = false
-}
-const sortOptions = [
-  {
-    value: 'activity',
-    label: 'Activity',
-  },
-  {
-    value: 'creation',
-    label: 'Creation',
-  },
-  {
-    value: 'votes',
-    label: 'Votes',
-  },
-]
 
 const props = defineProps({
   sortType: {
@@ -58,13 +41,18 @@ const props = defineProps({
   },
 })
 
+const setSortType = (sortType) => {
+  emit('update-sort-type', sortType)
+  isSelectAcitve.value = false
+}
+
 const formattedSortType = computed(() => {
   return props.sortType.charAt(0).toUpperCase() + props.sortType.slice(1)
 })
 
 const emit = defineEmits({ 'update-sort-type': String })
 
-onClickOutside(sortBySelect, (event) => {
+onClickOutside(sortBySelect, () => {
   isSelectAcitve.value = false
 })
 </script>

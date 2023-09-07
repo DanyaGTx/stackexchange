@@ -1,7 +1,6 @@
 <template>
   <div
     ref="filterRef"
-    :class="{ 'border-x-indigo-500 border-2': isFilterTransparent }"
     class="w-full m-auto border-b-mainLightGray p-[10px] sticky top-0 flex items-center bg-white border z-10"
   >
     <div

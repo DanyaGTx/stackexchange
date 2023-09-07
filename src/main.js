@@ -1,5 +1,4 @@
 import './css/style.css'
-import 'element-plus/es/components/message/style/css'
 import { ElInfiniteScroll } from 'element-plus'
 import { createApp } from 'vue'
 import { router } from './router/router.js'

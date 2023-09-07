@@ -11,3 +11,18 @@ export const toastOptions = {
   icon: true,
   rtl: false,
 }
+
+export const sortOptions = [
+  {
+    value: 'activity',
+    label: 'Activity',
+  },
+  {
+    value: 'creation',
+    label: 'Creation',
+  },
+  {
+    value: 'votes',
+    label: 'Votes',
+  },
+]
