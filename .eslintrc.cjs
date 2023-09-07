@@ -1,6 +1,10 @@
 module.exports = {
-  extends: ['plugin:vue/vue3-recommended', 'plugin:prettier/recommended'],
-  plugins: ['unused-imports', 'prettier'],
+  extends: [
+    'plugin:vue/vue3-recommended',
+    'plugin:prettier/recommended',
+    'prettier',
+  ],
+  plugins: ['unused-imports', 'prettier', 'sort-imports-es6-autofix'],
   rules: {
     semi: ['warn', 'never'],
     quotes: ['warn', 'single'],
@@ -21,6 +25,15 @@ module.exports = {
         imports: 'only-multiline',
         exports: 'only-multiline',
         functions: 'never',
+      },
+    ],
+
+    'sort-imports-es6-autofix/sort-imports-es6': [
+      'warn',
+      {
+        ignoreCase: false,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
       },
     ],
   },

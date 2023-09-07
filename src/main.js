@@ -1,17 +1,12 @@
-import { createApp } from 'vue'
-import { ElInfiniteScroll } from 'element-plus'
-import router from './router'
-import toast from './toast'
-import App from './App.vue'
-import './style.css'
+import './css/style.css'
 import 'element-plus/es/components/message/style/css'
+import { ElInfiniteScroll } from 'element-plus'
+import { createApp } from 'vue'
+import { router } from './router/router.js'
+import App from './App.vue'
+import toast from './utils/vueToast.js'
 
-
-export const plugins = [
-  ElInfiniteScroll,
-  router,
-  toast
-]
+export const plugins = [ElInfiniteScroll, router, toast]
 
 const app = createApp(App)
 

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'FivoSans';
+  font-weight: 700;
+  src: url('../assets/fonts/Fivosansbold.ttf');
+}
+
+@font-face {
+  font-family: 'FivoSans';
+  font-weight: 400;
+  src: url('../assets/fonts/Fivosansregular.ttf');
+}
+@font-face {
+  font-family: 'FivoSans';
+  font-weight: 500;
+  src: url('../assets/fonts/Fivosansmedium.ttf');
+}
