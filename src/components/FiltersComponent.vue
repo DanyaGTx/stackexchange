@@ -47,7 +47,7 @@
         Clear
       </button>
       <button
-        class="py-3 px-4 rounded-[14px] font-bold bg-accentSun w-[125px] hover:bg-[#fcbb0a] hover:shadow-box-shadow-element transition ease-in"
+        class="py-3 px-4 rounded-[14px] font-bold bg-accentSun w-[125px] hover:bg-accentSunHover hover:shadow-box-shadow-element transition ease-in"
         @click="acceptFilters"
       >
         Save Filters

@@ -57,7 +57,7 @@
           </p>
         </div>
         <div class="flex items-center min-w-max max-[720px]:mt-2">
-          <p class="text-[#93999F]">
+          <p class="text-mainGray">
             {{ convertDate(props.issue.creation_date) }}
           </p>
         </div>

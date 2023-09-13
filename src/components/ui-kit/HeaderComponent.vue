@@ -21,7 +21,7 @@
         <div
           class="min-w-fit flex gap-10 font-FivoSans font-bold max-[1100px]:hidden"
         >
-          <router-link :to="{ name: 'about' }">About</router-link>
+          <router-link to="/about">About</router-link>
           <router-link to="/products">Products</router-link>
           <router-link to="/teams">For Teams</router-link>
         </div>
