@@ -1,6 +1,6 @@
 # StackExchange Searcher
 
-![StackExchange](https://i.imgur.com/rRT9KVb.png)
+![StackExchange](https://i.imgur.com/xy1A1hh.png)
 
 Welcome to StackExchange Searcher! This project was created to simplify the process of finding answers to your programming questions on Stack Overflow. Whether you're an experienced developer or just starting out, our intuitive search interface will assist you in discovering the solutions you need.
 
